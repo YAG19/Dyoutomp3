@@ -3,10 +3,10 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-driver = webdriver.Chrome(
-    executable_path="C:\\Users\\yagne\\Downloads\\chromedriver.exe"
+driver = webdriver.Chrome(                                                          #download latest webdriver for your browser and set 
+    executable_path="C:\\Users\\yagne\\Downloads\\chromedriver.exe"                               #your path                       
 )
-driver.minimize_window()
+driver.minimize_window()                                                            #chrome browser will open got to the site 
 driver.get("https://ytmp3.cc/")
 
 elem = driver.find_element_by_name("video")
